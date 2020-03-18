@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="172.16.18.30">
+    <serverData>
+      <paths name="172.16.18.30">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/jayden/web/travel" local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="/home/jayden/web/travel/src/test" local="$PROJECT_DIR$/src/test" web="/" />
+            <mapping deploy="/home/jayden/web/travel/src/main" local="$PROJECT_DIR$/src/main" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>

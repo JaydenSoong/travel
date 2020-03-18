@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="MySQL - travel@172.16.18.30" uuid="e52f2d7b-8e0d-4d73-acfb-0770f08ea1b8">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://172.16.18.30:3306/travel?serverTimezone=UTC</jdbc-url>
+    </data-source>
+  </component>
+</project>
