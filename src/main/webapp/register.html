@@ -7,6 +7,56 @@
         <link rel="stylesheet" href="css/register.css">
 		<!--导入jquery-->
 		<script src="js/jquery-3.3.1.js"></script>
+		<script>
+			//校验用户名
+			function checkUsername() {
+				let $username = $("#username");
+				//用户名正则，2到20位（字母，数字，下划线，减号）
+				let uPattern = /^[a-zA-Z0-9_-]{2,20}$/;
+				let username = $username.val();
+				let flag = uPattern.test(username);
+				if (flag) {
+					$username.css("border", "1px solid green");
+				} else {
+					$username.css("border", "1px solid red");
+				}
+			}
+
+			//校验密码
+			function checkPassword() {
+				let $password = $("#password");
+				//用户名正则，2到20位（字母，数字，下划线，减号）
+				let pPattern = /^[a-zA-Z0-9_-]{6,20}$/;
+				let password = $password.val();
+				let flag = pPattern.test(password);
+				if (flag) {
+					$password.css("border", "1px solid green");
+				} else {
+					$password.css("border", "1px solid red");
+				}
+			}
+
+			//校验 Email
+			function checkEmail() {
+				let $email = $("#email");
+				//用户名正则，2到20位（字母，数字，下划线，减号）
+				let ePattern = /^[a-z]([a-z0-9]*[-_]?[a-z0-9]+)*@([a-z0-9]*[-_]?[a-z0-9]+)+[\.][a-z]{2,3}([\.][a-z]{2})?$/i;
+				let email = $email.val();
+				let flag = ePattern.test(email);
+				if (flag) {
+					$email.css("border", "1px solid green");
+				} else {
+					$email.css("border", "1px solid red");
+				}
+			}
+
+
+			$(function () {
+				$("#username").blur(checkUsername);
+				$("#password").blur(checkPassword);
+				$("#email").blur(checkEmail);
+			})
+		</script>
     </head>
 	<body>
 	<!--引入头部-->
@@ -38,7 +88,7 @@
     								<label for="password">密码</label>
     							</td>
     							<td class="td_right">
-    								<input type="text" id="password" name="password" placeholder="请输入密码">
+    								<input type="password" id="password" name="password" placeholder="请输入密码">
     							</td>
     						</tr>
     						<tr>

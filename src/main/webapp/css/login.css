@@ -1,8 +1,9 @@
 #login_wrap {
-    width:100%;
-    min-width: 1300px;
+    width:1200px;
+    min-width: 1200px;
     overflow: hidden;
     position: relative;
+    margin: 0 auto;
 }
 
 .login-box {
@@ -10,7 +11,7 @@
     height: 450px;
     position: absolute;
     top: 50px;
-    right:170px;
+    right:20px;
     background: #fff;
 }
 .title {
